@@ -66,6 +66,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
+
         values.put(COLUMN_NAME, user.name);
         values.put(COLUMN_DESCRIPTION, user.description);
         values.put(COLUMN_ID, user.id);
