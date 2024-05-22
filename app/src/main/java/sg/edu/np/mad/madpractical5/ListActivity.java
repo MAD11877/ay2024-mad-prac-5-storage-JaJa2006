@@ -1,7 +1,6 @@
 package sg.edu.np.mad.madpractical5;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +26,7 @@ public class ListActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        MyDBHandler dbHandler = new MyDBHandler(ListActivity.this, null, null, 1);
+        DatabaseHandler dbHandler = new DatabaseHandler(ListActivity.this, null, null, 1);
         Random rand = new Random();
         for (int i = 1; i <= 20; i++) {
             int name = Math.abs(rand.nextInt());

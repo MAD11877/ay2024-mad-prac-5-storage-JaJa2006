@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         User user2 = new User(Name,Desc,Id,Follow);
 
-        MyDBHandler dbHandler = new MyDBHandler(MainActivity.this, null, null, 1);
+        DatabaseHandler dbHandler = new DatabaseHandler(MainActivity.this, null, null, 1);
 
         tvName.setText(user2.name);
         tvDescription.setText(user2.description);
